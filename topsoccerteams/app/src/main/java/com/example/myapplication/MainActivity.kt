@@ -26,8 +26,9 @@ class MainActivity : AppCompatActivity() {
         //assigning array position of 0 teams array to a new value
         var teamsDisplay =""
         var count = 0
-        while(count< 5) {
+        while(count< teams.count()) {
             teamsDisplay += "${teams[count]}\n"
+            count++
 
         }
 
@@ -38,6 +39,9 @@ class MainActivity : AppCompatActivity() {
 //        teamsDisplay +="${teams[3]}\n"
 //        teamsDisplay +="${teams[4]}\n"
 //        teamsDisplay +="${teams[5]}\n"
+
+        //display array content in the text view
+        teamsText.text = teamsDisplay
 
 
 
