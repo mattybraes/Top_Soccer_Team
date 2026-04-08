@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,7 +21,25 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        
+        val teamsText = findViewById<TextView>(R.id.teamsDisplayid)
+
+        //assigning array position of 0 teams array to a new value
+        var teamsDisplay =""
+        var count = 0
+        while(count< 5) {
+            teamsDisplay += "${teams[count]}\n"
+
+        }
+
+
+//        teamsDisplay +="${teams[0]}\n"
+//        teamsDisplay +="${teams[1]}\n"
+//        teamsDisplay +="${teams[2]}\n"
+//        teamsDisplay +="${teams[3]}\n"
+//        teamsDisplay +="${teams[4]}\n"
+//        teamsDisplay +="${teams[5]}\n"
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
