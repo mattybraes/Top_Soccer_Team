@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         //assigning array content to a variable
 
-        //for loop to loop to describe all the arrays and display all its values
+        //for loop to loop, to describe all the arrays and display all its values
         var teamsDisplay = ""
         for (team in teams){
             teamsDisplay += "${team}\n"
