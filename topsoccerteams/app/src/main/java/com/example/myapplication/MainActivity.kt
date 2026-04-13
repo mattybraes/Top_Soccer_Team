@@ -23,14 +23,16 @@ class MainActivity : AppCompatActivity() {
 
         val teamsText = findViewById<TextView>(R.id.teamsDisplayid)
 
-        //assigning array position of 0 teams array to a new value
-        var teamsDisplay =""
-        var count = 0
-        while(count< teams.count()) {
-            teamsDisplay += "${teams[count]}\n"
-            count++
+        teams[0] = "Mamelodi Sundowns FC"
 
-        }
+//        //assigning array position of 0 teams array to a new value
+//        var teamsDisplay =""
+//        var count = 0
+//        while(count< teams.count()) {
+//            teamsDisplay += "${teams[count]}\n"
+//            count++
+//
+//        }
 
 
 //        teamsDisplay +="${teams[0]}\n"
@@ -41,7 +43,10 @@ class MainActivity : AppCompatActivity() {
 //        teamsDisplay +="${teams[5]}\n"
 
         //display array content in the text view
+        val teamsDisplay = null
         teamsText.text = teamsDisplay
+        var teamsDisplay = ""
+
 
 
 
