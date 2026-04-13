@@ -23,7 +23,16 @@ class MainActivity : AppCompatActivity() {
 
         val teamsText = findViewById<TextView>(R.id.teamsDisplayid)
 
-        teams[0] = "Mamelodi Sundowns FC"
+        teams[0] = "Mamelodi Sundowns FC :)"
+
+        //assigning array content to a variable
+
+        var teamsDisplay = ""
+        for (team in teams){
+            teamsDisplay += "${team}\n"
+        }
+
+
 
 //        //assigning array position of 0 teams array to a new value
 //        var teamsDisplay =""
@@ -43,9 +52,8 @@ class MainActivity : AppCompatActivity() {
 //        teamsDisplay +="${teams[5]}\n"
 
         //display array content in the text view
-        val teamsDisplay = null
+        
         teamsText.text = teamsDisplay
-        var teamsDisplay = ""
 
 
 
